@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Express App</h1>
+
+    <form action="/" method="post">
+        <input type="text" name="title" placeholder="Enter blog title">
+        <input type="text" name="body" placeholder="Enter blog content">
+        <input type="submit" value="Submit">
+    </form>
+
+    <% const name = 'manish'; %>
+    <h2>Welcome to my page <%= name %></h2>
+
+    <% data.forEach(function(post) { %>
+        <h3><%= post.title %></h3>
+        <h3><%= post.body %></h3>
+    <% }); %>
+</body>
+</html>
